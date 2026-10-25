@@ -1,0 +1,89 @@
+---
+title: Tiêu chuẩn cho Workshop
+
+sidebar:
+    label: 3.3 Tiêu chuẩn
+
+related: ["/scoring"]
+---
+
+Dưới đây là **Khung tiêu chuẩn Best Practices** giúp sinh viên định hướng, rà soát và xây dựng Workshop đạt chất lượng cao nhất theo đúng chuẩn mực của AWS và chương trình FCAJ.
+
+## Ý tưởng & Mục tiêu bài toán (Problem Statement & Scope)
+
+* **Bối cảnh & Bài toán thực tế:**
+  * Hệ thống được xây dựng nhằm giải quyết vấn đề gì trong thực tế?
+  * Đối tượng sử dụng / khách hàng mục tiêu là ai?
+  * Ví dụ: Hệ thống thu thập và giám sát dữ liệu IoT thời gian thực, Pipeline xử lý dữ liệu tự động, Hệ thống logging & alert tập trung cho Microservices,...
+* **Mục tiêu cụ thể & Tiêu chí hoàn thành:**
+  * Đầu ra mong muốn rõ ràng: Dashboard trực quan, RESTful API hoạt động, hệ thống cảnh báo tự động gửi email/Slack khi có sự cố,...
+  * Tiêu chí đo lường sự thành công của giải pháp.
+* **Phù hợp định hướng Cloud & AWS:**
+  * Đề tài gắn liền với hệ sinh thái AWS, tập trung khai thác các dịch vụ Cloud hiện đại, tránh đề tài lệch chủ đề hoặc mang tính chất lý thuyết đơn thuần.
+
+## Kiến trúc & Thiết kế kỹ thuật (Architecture & Well-Architected Best Practices)
+
+* **Sơ đồ kiến trúc (Architecture Diagram):**
+  * Sơ đồ trực quan, thẩm mỹ, vẽ bằng các công cụ chuyên nghiệp (draw.io, Excalidraw, Lucidchart, Figma,...).
+  * Sử dụng **bộ icon chính thức của AWS** (AWS Architecture Icons mới nhất), ghi đúng tên dịch vụ và thể hiện rõ luồng dữ liệu giữa các thành phần.
+  * *Lưu ý quan trọng:* Sinh viên phải **tự tay thiết kế và hiểu cặn kẽ** kiến trúc của mình. Không sử dụng sơ đồ do GenAI tạo 100% (xem quy tắc khóa điểm tại [5. Tiêu chí chấm Workshop](../5-scoring/)).
+* **Lựa chọn dịch vụ:**
+  * Giải thích rõ căn cứ lựa chọn các dịch vụ (S3, Lambda, API Gateway, DynamoDB, SQS, ECS,...): dựa trên tiêu chí chi phí, tính sẵn sàng cao (High Availability), mô hình Serverless hay Managed Services.
+* **Bảo mật & Quản lý danh tính (Security Pillar - Tiêu chí trọng tâm):**
+  * Thiết lập IAM Role, IAM Policy tuân thủ nghiêm ngặt nguyên tắc **Least Privilege** (quyền tối thiểu cần thiết).
+  * Hạn chế tối đa public tài nguyên ra Internet (đặt tài nguyên trong Private Subnet, sử dụng VPC Endpoint, cấu hình Security Group chặt chẽ).
+  * **Tuyệt đối không hard-code credentials** (Access Key, Secret Key, token, mật khẩu cơ sở dữ liệu) trong code, file cấu hình hoặc GitHub repository.
+* **Độ tin cậy & Vận hành (Reliability & Operational Excellence):**
+  * Thiết kế có tính chịu lỗi, khả năng mở rộng (Auto Scaling, kiến trúc hướng sự kiện Event-driven, hàng đợi SQS giải phóng tải).
+  * Thiết lập cơ chế giám sát, logging và cảnh báo tự động (CloudWatch Logs, Metrics, Alarms).
+
+## Dự toán & Tối ưu chi phí (Cost Estimation & Optimization)
+
+:::warning
+**BẮT BUỘC:** Theo tiêu chí chấm Workshop, báo cáo hoặc bài trình bày **thiếu phần COST sẽ nhận 0 điểm mục Trình bày**.
+:::
+
+* **Bảng dự toán chi phí (Cost Estimation):**
+  * Xây dựng bảng dự toán chi phí chi tiết bằng công cụ **[AWS Pricing Calculator](https://calculator.aws/)**.
+  * Dự toán dựa trên kịch bản tải thực tế (lưu lượng request, dung lượng lưu trữ, băng thông mạng).
+* **Chiến lược tối ưu chi phí (Cost Optimization):**
+  * Đề xuất các phương án tối ưu: tận dụng AWS Free Tier, ưu tiên kiến trúc Serverless trả tiền theo lượt sử dụng, thiết lập vòng đời dữ liệu (S3 Lifecycle Policy), lựa chọn dung lượng và compute tier phù hợp.
+* **Quy trình dọn dẹp tài nguyên (Clean-up):**
+  * Cung cấp các bước hướng dẫn dọn dẹp chi tiết sau khi thực hành xong (xóa stack, empty và xóa S3 bucket, tắt alarm, giải phóng Elastic IP...) để tránh phát sinh chi phí ngoài ý muốn trên tài khoản AWS.
+
+## Hướng dẫn thực hành Step-by-Step & Demo sản phẩm
+
+* **Điều kiện tiên quyết (Prerequisites):**
+  * Nêu rõ các yêu cầu trước khi thực hành: tài khoản AWS, Region khuyến nghị, quyền IAM cần thiết.
+  * Các công cụ cần cài đặt và cấu hình: AWS CLI, Git, Docker, SAM, CDK hoặc Terraform (nếu áp dụng).
+* **Hướng dẫn từng bước chi tiết (Step-by-step Lab Guide):**
+  * Phân chia thành từng bước rõ ràng, logic (Step 1: Khởi tạo mạng VPC -> Step 2: Cấu hình IAM Role -> Step 3: Triển khai backend -> ...).
+  * Cung cấp đầy đủ câu lệnh CLI, cấu hình file mẫu, screenshot hướng dẫn trực quan trên AWS Management Console.
+  * Đảm bảo tính **tái lập (Reproducible)**: người đọc hoàn toàn có thể tự làm theo từ đầu đến cuối mà không gặp lỗi đứt gãy.
+* **Kiểm thử & Xác thực (Testing & Validation):**
+  * Hướng dẫn cụ thể cách gửi request test (qua cURL, Postman hoặc giao diện Web).
+  * Hướng dẫn kiểm tra kết quả thực tế qua log CloudWatch, kiểm tra dữ liệu được ghi nhận trong cơ sở dữ liệu.
+  * Kiểm thử các kịch bản lỗi (ví dụ: request sai định dạng, quá tải) để xem hệ thống xử lý ra sao.
+* **Sản phẩm chạy thực tế (Live Demo / Video Minh chứng):**
+  * Bắt buộc phải có sản phẩm hoạt động thực tế: cung cấp đường link demo trực tiếp, video quay lại quá trình hoạt động thực tế hoặc link production. *(Không có demo sản phẩm = 0 điểm mục Demo)*.
+
+## Tài liệu hóa & Trình bày (Documentation & Formatting)
+
+* **Chuẩn song ngữ (Bilingual vi / en):**
+  * Bắt buộc có cả hai phiên bản tiếng Việt và tiếng Anh cho tất cả nội dung chính.
+  * Văn phong chuyên nghiệp, dịch chuẩn xác thuật ngữ kỹ thuật điện toán đám mây.
+* **Cấu trúc & Giao diện Website:**
+  * Xây dựng dựa trên template tiêu chuẩn FCAJ, mục lục (Table of Contents) rõ ràng, navigation điều hướng thuận tiện.
+* **Trình bày chuyên nghiệp:**
+  * Font chữ, định dạng text dễ đọc, ngắt đoạn hợp lý.
+  * Các đoạn mã nguồn (code snippet, CLI, policy JSON) phải đặt trong code block có syntax highlighting tương ứng.
+  * Hình ảnh minh họa rõ nét, có chú thích đầy đủ, hạn chế lỗi chính tả.
+
+## Đóng góp cá nhân & Đổi mới sáng tạo (Personal Contribution & Reflection)
+
+* **Mức độ tự chủ & Tùy biến sáng tạo:**
+  * Workshop phải là kết quả làm việc độc lập của sinh viên, thể hiện sự tìm tòi, sáng tạo riêng biệt.
+  * Có sự mở rộng hoặc tùy biến so với các bài lab cơ bản: tích hợp thêm dịch vụ mới, tối ưu bảo mật sâu hơn, bổ sung tính năng tự động hóa (CI/CD, IaC).
+* **Bài học kinh nghiệm & Xử lý sự cố (Troubleshooting & Reflection):**
+  * Nêu rõ các khó khăn, lỗi kỹ thuật đã gặp phải trong quá trình triển khai và cách thức sinh viên đã tìm tòi giải quyết.
+  * Định hướng phát triển, mở rộng giải pháp trong tương lai.

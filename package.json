@@ -1,0 +1,17 @@
+{
+  "name": "@fcaj/rules",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "blume dev --port 3003",
+    "build": "blume build",
+    "doctor": "blume doctor",
+    "fmt": "oxfmt"
+  },
+  "dependencies": {
+    "blume": "^2.2.5"
+  },
+  "devDependencies": {
+    "oxfmt": "^0.74.0"
+  }
+}
