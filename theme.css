@@ -39,7 +39,9 @@ header img {
    layout, stretching the page sideways and adding thousands of pixels
    of phantom height below the content on narrow viewports. Keep them
    out of layout entirely until their trigger is hovered. */
-.prose .twoslash-hover:not(:hover):not(.twoslash-open) :is(.twoslash-popup-container, .twoslash-bridge) {
+.prose
+  .twoslash-hover:not(:hover):not(.twoslash-open)
+  :is(.twoslash-popup-container, .twoslash-bridge) {
   display: none;
 }
 

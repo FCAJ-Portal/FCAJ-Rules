@@ -1,7 +1,7 @@
-import { defineConfig } from "oxfmt";
+import { defineConfig } from 'oxfmt'
 
 export default defineConfig({
-    tabWidth: 2,
-    singleQuote: true,
-    useTabs: false
+  tabWidth: 2,
+  singleQuote: true,
+  semi: false,
 })

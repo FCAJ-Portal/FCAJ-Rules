@@ -2,7 +2,7 @@
 title: 1. Nội Quy
 
 sidebar:
-    hidden: true
+  hidden: true
 ---
 
 Để xây dựng một môi trường làm việc chuyên nghiệp – văn minh – hiệu quả, mỗi sinh viên khi tham gia thực tập cần tuân thủ những nội quy chung. Bộ quy định này không chỉ giúp đảm bảo tính kỷ luật mà còn tạo ra sự công bằng, tôn trọng và thoải mái cho tất cả mọi người.

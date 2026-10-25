@@ -38,4 +38,3 @@
 3. Luôn luôn là folder, đừng gộp hết toàn bộ rules vào 1 trang, xem ví dụ chia ra ở `apps/rules/contents/violations`
 
 ## Cách push
-
