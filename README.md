@@ -4,18 +4,15 @@
 
 ### Chuẩn bị môi trường
 
-- Toàn bộ monorepo này sử dụng runtime tên là Bun, được phát triển bởi Anthropic.
-- Cách tải: https://bun.com/docs/installation
-
-> Sau khi tải xong, mở terminal lên và chạy: `bun --version`, nếu in ra phiên bản >= 1.4 là đúng.
+- Toàn bộ monorepo này sử dụng runtime Node.js
+- Chạy `npm i -g pnpm`
+- Check xem pnpm đã chạy chưa bằng cách gõ `pnpm --version`
 
 ### Chạy máy chủ dev
 
-- Ở root (ở thư mục chính của repo sau khi clone, chưa có `cd` vào folder nào), chạy lệnh: `bun install` để tải các packages về node_modules
+- Ở root (ở thư mục chính của repo sau khi clone), chạy lệnh: `pnpm install` để tải các packages về node_modules
 
-> Để dễ hiểu hơn, hãy tưởng tượng Bun là con lai của Node.js và npm
-
-- Chạy dev server: `bun --filter @fcaj/rules dev`
+- Chạy dev server: `pnpm run dev`
 - Truy cập `http://localhost:3003`
 
 ### Các cú pháp khi soạn file markdown có thể tham khảo thêm:
@@ -34,7 +31,5 @@
 ## Một số quy ước chung
 
 1. **Luôn luôn tạo PR, mặc dù có quyền được push thẳng vô main nhưng luôn luôn tạo PR**
-2. File media sẽ nằm ở thư mục `apps/rules/assets/images`
-3. Luôn luôn là folder, đừng gộp hết toàn bộ rules vào 1 trang, xem ví dụ chia ra ở `apps/rules/contents/violations`
-
-## Cách push
+2. File media sẽ nằm ở thư mục `assets/images`
+3. Luôn luôn là folder, đừng gộp hết toàn bộ rules vào 1 trang, xem ví dụ chia ra ở `contents/violations`
