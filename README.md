@@ -4,7 +4,7 @@
 
 ### Chuẩn bị môi trường
 
-- Toàn bộ monorepo này sử dụng runtime Node.js
+- Toàn bộ repo này sử dụng runtime Node.js
 - Chạy `npm i -g pnpm`
 - Check xem pnpm đã chạy chưa bằng cách gõ `pnpm --version`
 
