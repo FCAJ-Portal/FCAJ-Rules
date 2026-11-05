@@ -1,6 +1,6 @@
 import { defineMeta } from 'blume'
-
 export default defineMeta({
-  title: '5. Tiêu chí chấm điểm',
+  title: 'Chấm điểm',
+  order: 50,
   collapsed: false,
 })
