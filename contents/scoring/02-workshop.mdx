@@ -1,0 +1,76 @@
+---
+title: Proposal / Workshop
+sidebar:
+  label: Proposal / Workshop
+related: ['/scoring', '/scoring/deductions', '/project']
+---
+
+Nhóm Proposal / Workshop có tối đa **5.0 điểm**, gồm **Architecture 3.5 điểm** và **Workshop 1.5 điểm**.
+
+## Cơ cấu điểm
+
+| Thành phần                  | Điểm tối đa |
+| --------------------------- | ----------- |
+| Architecture / Production   | **3.5**     |
+| Workshop / Trình bày        | **1.5**     |
+| **Tổng**                    | **5.0**     |
+
+:::danger[Quy tắc quan trọng của Proposal / Workshop]
+- Không có Architecture **hoặc** không trình bày Workshop/Proposal: toàn bộ Proposal / Workshop bằng **0 điểm**.
+- Phát hiện copy bài đã có từ trước: toàn bộ Proposal / Workshop bằng **0 điểm**.
+- Không được để điểm của Architecture hoặc Proposal / Workshop thấp hơn **0**.
+:::
+
+## Architecture / Production — 3.5 điểm
+
+| Tiêu chí                                      | Điểm tối đa | Cách chấm                                      |
+| --------------------------------------------- | ----------- | ---------------------------------------------- |
+| Chuẩn AWS service, icon, tên, mục đích và flow | **0.5**    | Đúng dịch vụ, icon, tên, mục đích và luồng      |
+| Thẩm mỹ diagram                              | **0.2**     | Ảnh rõ nét, không chồng chéo, bố cục cân đối   |
+| Operational Excellence                       | **0.5**     | Đánh giá theo AWS Well-Architected             |
+| Security                                     | **0.5**     | Đánh giá các vấn đề và giải pháp bảo mật       |
+| Reliability                                  | **0.5**     | Failure handling, availability và recovery     |
+| Performance Efficiency                       | **0.5**     | Lựa chọn tài nguyên và khả năng scale           |
+| Cost Optimization                             | **0.5**     | Cost awareness và tối ưu chi phí                |
+| Sustainability                               | **0.0**     | Ghi nhận trong checklist, không chấm / không áp dụng |
+| Tự vẽ và giải thích Architecture              | **0.3**     | Điểm công vẽ và khả năng giải thích             |
+| **Tổng**                                      | **3.5**     |                                                |
+
+### Quy tắc về Production
+
+Sản phẩm thực tế phải thể hiện đúng như Architecture đã thiết kế. Nếu Production không thể hiện đúng Architecture, điểm Architecture được tính tối đa **một nửa số điểm Architecture đạt được**.
+
+### Quy tắc về AI và bản quyền
+
+- Architecture hoàn toàn do AI tạo: **trừ 1.0 điểm trong mục Architecture**.
+- Nếu Architecture còn vi phạm các tiêu chí Well-Architected, tiếp tục trừ theo từng tiêu chí vi phạm.
+- Nếu sử dụng AI hỗ trợ nhưng để sai icon, sai tên service, flow vô lý hoặc chồng chéo, áp dụng mức trừ tương ứng trong bảng Architecture.
+- Nếu Architecture không đúng chuẩn AWS nhưng do sinh viên tự vẽ, chỉ ghi nhận điểm công vẽ theo barem.
+- Nếu phát hiện copy bài đã có từ trước, Proposal / Workshop bằng **0 điểm**.
+
+Mọi mức trừ chỉ áp dụng trong Architecture và không được làm điểm Architecture thấp hơn **0**.
+
+## Workshop / Trình bày — 1.5 điểm
+
+Phần Workshop được chấm **holistic**, không chia thành các điểm con riêng. Sinh viên đạt tối đa **1.5 điểm** khi hoàn thành đầy đủ và có chất lượng các tiêu chí sau:
+
+- Nêu rõ vấn đề thực tế cần giải quyết.
+- Trình bày giải pháp và cách giải quyết vấn đề mạch lạc.
+- Có nội dung hướng dẫn các bước setup và triển khai dự án.
+- Có hình ảnh minh họa rõ ràng cho các bước thực hiện.
+- Có ước tính chi phí và nội dung tối ưu chi phí.
+- Nội dung Proposal/Workshop đầy đủ, dễ theo dõi và có thể làm theo.
+
+:::warning
+Thiếu phần COST thì mục Trình bày/Workshop không đạt điều kiện bắt buộc và được xử lý theo mức **0 điểm mục Trình bày** trong barem.
+:::
+
+## Demo — thuộc phần đánh giá Workshop
+
+Sản phẩm cần có ít nhất một minh chứng hợp lệ:
+
+- Live demo.
+- Video minh chứng rõ ràng.
+- Link production đang hoạt động.
+
+Không có demo hoặc không có sản phẩm minh chứng thì Demo bằng **0 điểm**. Chi tiết mức trừ xem tại [Bảng trừ điểm & mất điểm](/scoring/deductions).
