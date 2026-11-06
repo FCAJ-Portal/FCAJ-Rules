@@ -1,6 +1,6 @@
 import { defineMeta } from 'blume'
-
 export default defineMeta({
-  title: '3. Project',
+  title: 'Project',
+  order: 40,
   collapsed: false,
 })

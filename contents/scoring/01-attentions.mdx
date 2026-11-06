@@ -1,98 +1,56 @@
 ---
-title: Các quy định & Lưu ý quan trọng theo từng nhóm tiêu chí
-
+title: Worklog / Blog
 sidebar:
-  label: 5.1 Lưu ý quan trọng
-
-related: ['/regulations/diligence', '/project', '/violations']
+  label: Worklog / Blog
+related: ['/scoring', '/scoring/deductions', '/project/content']
 ---
 
-## Worklog / Blog - 1.0 điểm
+Nhóm Worklog / Blog có tối đa **1.0 điểm**, gồm Blog kỹ thuật và Daily Worklog.
 
-Nhóm tiêu chí này đánh giá thói quen học tập, đúc kết kiến thức và tính kỷ luật của sinh viên thông qua việc viết Blog kỹ thuật và ghi nhận nhật ký làm việc (Daily Worklog).
+## Cơ cấu điểm
 
-- **Blog kỹ thuật:** Yêu cầu tối thiểu **3 bài Blog** chất lượng chia sẻ về các chủ đề/công nghệ đã học hoặc nghiên cứu trong kỳ thực tập.
-- **Daily Worklog:** Ghi nhận đều đặn tiến độ hàng ngày, thể hiện rõ công việc và nội dung đã học/làm theo đúng template quy định, kèm trích dẫn tài liệu tham khảo (references).
+| Thành phần       | Điểm tối đa |
+| ---------------- | ----------- |
+| Blog kỹ thuật    | **0.5**     |
+| Daily Worklog    | **0.5**     |
+| **Tổng**         | **1.0**     |
 
-:::warning
-**ĐIỀU KIỆN TIÊN QUYẾT:**
+:::danger[Điều kiện tiên quyết]
+Sinh viên bắt buộc phải có cả **Blog** và **Daily Worklog**. Thiếu một trong hai nội dung thì toàn bộ nhóm Worklog / Blog bằng **0 điểm**.
+:::
 
-- Bắt buộc phải có cả **Blog** VÀ **Daily Worklog**. Nếu thiếu 1 trong 2 nội dung này thì toàn bộ nhóm Worklog = **0 điểm**.
-- Không ghi nhận nhật ký, viết qua loa không đúng template hoặc thiếu bài viết kỹ thuật sẽ bị trừ điểm theo quy định.
-  :::
+## Checklist chấm Blog kỹ thuật
 
-## Proposal / Workshop - 5.0 điểm
+| Tiêu chí                                               | Cách chấm                                            |
+| ------------------------------------------------------ | ---------------------------------------------------- |
+| Có tối thiểu **3 bài Blog**                            | Đủ số lượng và nội dung đạt yêu cầu                  |
+| Blog chia sẻ kiến thức đã học hoặc nghiên cứu         | Đánh giá mức độ phù hợp và chất lượng nội dung        |
+| Blog do sinh viên tự viết                              | Blog tự viết vẫn được tính điểm                       |
+| Blog không trùng lặp hoặc sao chép nội dung có sẵn     | Nội dung phải thể hiện quá trình học và tổng hợp     |
 
-Đây là phần chiếm trọng số lớn nhất trong kỳ thực tập, đánh giá năng lực chuyên môn và giải pháp kỹ thuật của sinh viên.
+## Checklist chấm Daily Worklog
 
-Cấu phần gồm: Thiết kế kiến trúc (**Architecture**), Bản chạy thực tế (**Demo**) và **Trình bày giải pháp** (Proposal/Workshop).
+| Tiêu chí                                      | Cách chấm                                      |
+| --------------------------------------------- | ---------------------------------------------- |
+| Ghi nhận đều đặn tiến độ hàng ngày           | Thể hiện rõ công việc và nội dung đã học/làm   |
+| Dùng đúng template                             | Đúng cấu trúc và format                        |
+| Nội dung rõ ràng, đúng chủ đề                 | Không viết qua loa hoặc ngoài phạm vi          |
+| Có tài liệu tham khảo khi cần                 | Bổ sung references phù hợp                     |
 
-:::warning
-**QUY TẮC KHÓA WORKSHOP (ĐIỂM LIỆT):**
+## Mức trừ điểm
 
-- Không có Architecture **HOẶC** không trình bày Workshop/Proposal thì toàn bộ điểm Workshop = **0 điểm** (1 trong 2 không có).
-  :::
+| Trường hợp                                      | Mức trừ / giới hạn                                  |
+| ----------------------------------------------- | --------------------------------------------------- |
+| Thiếu một bài Blog                              | Trừ **0.1 điểm/bài**                                |
+| Thiếu Blog hoặc Daily Worklog                   | Toàn bộ nhóm bằng **0 điểm**                        |
+| Template hoặc format không đạt                  | Có thể mất tối đa **0.2 điểm**                      |
+| Nội dung không rõ, không đúng chủ đề hoặc thiếu references | Có thể mất tối đa **0.3 điểm**             |
 
-**Các lưu ý quan trọng về chuyên môn:**
+Điểm nhóm Worklog / Blog không được thấp hơn **0 điểm**.
 
-- **Kiến trúc hệ thống (Architecture):**
-  - Phải tuân thủ chuẩn thiết kế của AWS (đúng icon, đúng tên dịch vụ, kết nối và luồng dữ liệu hợp lý).
-  - Áp dụng các nguyên tắc của **AWS Well-Architected Framework** (Security, Reliability, Performance Efficiency, Cost Optimization, Operational Excellence). Trong đó, khía cạnh **Security** luôn được đánh giá rất nghiêm ngặt.
-  - Sinh viên phải tự vẽ, tự thiết kế và giải thích cặn kẽ giải pháp của mình. Giải pháp thực tế (workshop) **phải thể hiện được đúng như những gì đã thiết kế trên Architecture**.
+## Minh chứng cần chuẩn bị
 
-:::warning
-**QUY TẮC VỀ GENAI TRONG ARCHITECTURE:**
-
-- Architecture **hoàn toàn do AI tạo** = **0 điểm**.
-- Trường hợp có dùng AI hỗ trợ nhưng không chỉnh sửa kỹ lưỡng, để sót các lỗi cơ bản (sai icon, sai tên service, luồng vô lý, chồng chéo...) sẽ bị trừ điểm rất nặng.
-- Nếu vẽ không đúng chuẩn AWS nhưng là công sức tự tay thiết kế thì chỉ được ghi nhận điểm tối thiểu cho công vẽ.
-  :::
-
-- **Demo sản phẩm:**
-  - Bắt buộc phải có sản phẩm chạy thực tế (Live demo, video minh chứng rõ ràng hoặc link production hoạt động). Không có demo/sản phẩm = **0 điểm Demo**.
-- **Trình bày (Proposal & Workshop):**
-  - Trình bày mạch lạc, rõ ràng, thể hiện đầy đủ bài toán và cách giải quyết.
-  - **Bắt buộc phải có phần dự toán và tối ưu chi phí (COST):** Báo cáo hoặc bài thuyết trình **thiếu phần COST = 0 điểm mục Trình bày**.
-
-## Thái độ / tác phong - 2.0 điểm
-
-Đánh giá tính chuyên nghiệp, văn hóa làm việc và sự tuân thủ kỷ luật của sinh viên trong môi trường doanh nghiệp.
-
-- **Thái độ:** Tinh thần cầu thị, chủ động trong công việc, lịch sự, tôn trọng mọi người và đặc biệt là tính trung thực.
-- **Tuân thủ nội quy:** Chấp hành nghiêm chỉnh giờ giấc, văn hóa văn phòng, trang phục và các quy định của chương trình.
-
-:::warning
-**CÁC LỖI VI PHẠM ĐẶC BIỆT NGHIÊM TRỌNG:**
-
-- **Gian dối / không trung thực:** Cố tình khai báo sai, gian lận thông tin hoặc chối bỏ vi phạm rõ ràng = **0 điểm mục Thái độ**.
-- **Hút thuốc tại văn phòng:** Nhận ngay **0 điểm cho cả 2 mục** (Thái độ = 0 và Tuân thủ nội quy = 0), đồng thời chịu hình thức kỷ luật.
-- **Tự ý bỏ về / vắng không phép:** Bị đánh giá **0 điểm mục Tuân thủ nội quy**.
-- Các vi phạm khác (đi trễ, làm việc riêng, vi phạm trang phục...) sẽ bị trừ điểm trực tiếp theo quy định tại [4. Xử lý vi phạm](../4-violations/).
-  :::
-
-## Chuyên cần - 1.5 điểm
-
-Đánh giá sự hiện diện và mức độ tích cực tham gia các hoạt động thực tế của chương trình.
-
-- **Lên văn phòng (Office):** Đảm bảo đủ số buổi làm việc tại văn phòng theo quy định (tối thiểu 10 buổi hoặc số lượt booking hợp lệ). Thiếu buổi sẽ bị trừ điểm tương ứng.
-- **Tham gia sự kiện (Event):** Tham gia đủ tối thiểu **3 sự kiện** chuyên môn / cộng đồng theo thông báo của ban tổ chức.
-
-:::warning
-**LƯU Ý VỀ MINH CHỨNG CHUYÊN CẦN:**
-
-- Khi tham gia các sự kiện (Event), sinh viên **bắt buộc phải chụp ảnh check-in rõ mặt, hợp lệ** và đính kèm vào báo cáo.
-- Sự kiện thiếu ảnh hoặc ảnh không rõ ràng/không hợp lệ sẽ không được tính đủ điểm. Thiếu event sẽ bị trừ điểm trực tiếp vào điểm chuyên cần.
-  :::
-
-## Điểm thưởng (Bonus - 0.5 điểm)
-
-Chỉ dành cho những sinh viên thể hiện sự xuất sắc và kỷ luật toàn diện trong suốt kỳ thực tập.
-
-:::info
-**ĐIỀU KIỆN ĐẠT ĐIỂM BONUS (+0.5 ĐIỂM):**
-Sinh viên chỉ được cộng điểm thưởng khi **thỏa mãn đồng thời cả 3 điều kiện**:
-
-1. Đạt điểm tối đa nhóm **Thái độ / tác phong (2.0/2.0)**.
-2. Đạt điểm tối đa nhóm **Chuyên cần (1.5/1.5)**.
-3. Hoàn thành đầy đủ và chất lượng **Workshop/Project** (đầy đủ Architecture, Demo hoạt động và Trình bày giải pháp).
-   :::
+- Link các bài Blog.
+- Daily Worklog theo template.
+- References được sử dụng trong Worklog.
+- Các nội dung phải thể hiện đúng quá trình học tập và làm việc của sinh viên.

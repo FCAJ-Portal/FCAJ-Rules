@@ -186,3 +186,20 @@ aside[data-blume-callout='tip'] [class~='text-accent'] {
   min-width: 0;
   max-width: none;
 }
+
+/* Keep list markers visible inside Blume callouts. Callout uses `not-prose`,
+   so the typography plugin does not restore the list styles after Tailwind's
+   preflight resets them. */
+aside[data-blume-callout] :where(ul) {
+  list-style-type: disc;
+  padding-inline-start: 1.25rem;
+}
+
+aside[data-blume-callout] :where(ol) {
+  list-style-type: decimal;
+  padding-inline-start: 1.25rem;
+}
+
+aside[data-blume-callout] :where(li) {
+  padding-inline-start: 0.25rem;
+}

@@ -1,0 +1,66 @@
+---
+title: Bảng trừ điểm & mất điểm
+sidebar:
+  label: Trừ điểm & Mất điểm
+related: ['/scoring', '/violations']
+---
+
+Trang này tổng hợp các trường hợp bị trừ điểm, bằng 0 điểm hoặc bị khóa toàn bộ một nhóm tiêu chí. Tất cả điểm sau khi trừ đều có giới hạn thấp nhất là **0**.
+
+## Worklog / Blog
+
+| Trường hợp                                      | Mức trừ / kết quả                         |
+| ----------------------------------------------- | ----------------------------------------- |
+| Thiếu một bài Blog                              | Trừ **0.1 điểm/bài**                      |
+| Thiếu Blog hoặc Daily Worklog                  | Worklog / Blog = **0 điểm**                |
+| Template hoặc format không đạt                 | Có thể mất tối đa **0.2 điểm**             |
+| Nội dung không rõ, sai chủ đề hoặc thiếu references | Có thể mất tối đa **0.3 điểm**          |
+
+## Architecture
+
+| Trường hợp                                      | Mức trừ / kết quả                         |
+| ----------------------------------------------- | ----------------------------------------- |
+| Architecture hoàn toàn do AI tạo               | Trừ **1.0 điểm** trong Architecture       |
+| Vi phạm Well-Architected                        | Trừ **0.5 điểm/pillar** đang được chấm     |
+| Sai AWS icon, service, tên, flow hoặc mục đích  | Trừ tối đa **0.5 điểm** tiêu chuẩn AWS      |
+| Diagram mờ, chồng chéo, bố cục hoặc flow khó đọc | Trừ tối đa **0.2 điểm** thẩm mỹ          |
+| Production không thể hiện đúng Architecture    | Tính tối đa **một nửa điểm Architecture đạt được** |
+| Architecture không đúng chuẩn nhưng tự vẽ       | Chỉ ghi nhận điểm công vẽ theo barem        |
+| Sustainability                                    | Không chấm / không áp dụng                  |
+
+Các mức trừ trên chỉ áp dụng trong Architecture. Architecture không được thấp hơn **0 điểm**.
+
+## Proposal / Workshop
+
+| Trường hợp                                      | Mức trừ / kết quả                         |
+| ----------------------------------------------- | ----------------------------------------- |
+| Không có Architecture                           | Proposal / Workshop = **0 điểm**           |
+| Không trình bày Workshop/Proposal               | Proposal / Workshop = **0 điểm**           |
+| Copy bài đã có từ trước                         | Proposal / Workshop = **0 điểm**           |
+| Thiếu phần COST                                 | Mục Trình bày/Workshop = **0 điểm** theo barem |
+| Không có Demo hoặc sản phẩm minh chứng          | Demo = **0 điểm**                          |
+
+## Thái độ / Tác phong
+
+| Trường hợp                                      | Mức trừ / kết quả                         |
+| ----------------------------------------------- | ----------------------------------------- |
+| Gian dối / không trung thực                     | Thái độ = **0/1 điểm**                     |
+| Vắng không phép / không lý do                   | Trừ **0.3 điểm/buổi** ở Tuân thủ nội quy   |
+| Tự ý bỏ về hoặc bỏ về sau giờ nghỉ trưa         | Tuân thủ nội quy = **0/1 điểm**            |
+| Hút thuốc trong tòa nhà                         | Thái độ = **0/1**, Tuân thủ = **0/1**, hủy thực tập tại FCAJ |
+| Vi phạm nội quy khác (làm việc riêng, đi trễ, trang phục, mang dép...) | Trừ **0.2 điểm/lần** theo mức độ; có thể ảnh hưởng thêm mục Thái độ |
+
+## Chuyên cần
+
+| Trường hợp                                      | Mức trừ / kết quả                         |
+| ----------------------------------------------- | ----------------------------------------- |
+| Thiếu một buổi Office                           | Trừ **0.1 điểm/buổi**, tối đa đến 0.5       |
+| Thiếu một Event                                 | Trừ **0.3 điểm/Event**                     |
+| Event có ảnh thiếu hoặc không rõ                | Event đó chỉ tính **0.2 điểm**             |
+
+## Bonus
+
+| Trường hợp                                      | Kết quả                                    |
+| ----------------------------------------------- | ------------------------------------------ |
+| Thiếu một trong ba điều kiện Bonus              | Bonus = **0 điểm**                         |
+| Đủ cả ba điều kiện                               | Cộng **+0.5 điểm**                         |
