@@ -69,11 +69,11 @@ export default defineConfig({
     openInChat: false,
     assistant: {
       enabled: true,
-      provider: gateway({ model: 'deepseek/deepseek-v4.1-flash-1017', reasoning: 'medium' }),
+      provider: gateway({ model: 'xiaomi/mimo-v2.6-flash', reasoning: "minimal" }),
     },
   },
 
-  rateLimit: upstash({ urlEnv: 'KV_REST_API_URL', tokenEnv: 'KV_REST_API_TOKEN', requests: 50 }),
+  rateLimit: upstash({ urlEnv: 'KV_REST_API_URL', tokenEnv: 'KV_REST_API_TOKEN', requests: 60 }),
 
   analytics: [vercel()],
 
