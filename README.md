@@ -21,15 +21,3 @@
 
 - [Cú pháp mở rông](https://useblume.dev/docs/content/syntax)
 - [Componnent đặt biệt](https://useblume.dev/docs/content/components)
-
-### Liên hệ khẩn cấp
-
-- Trường hợp cần liên lạc khẩn cấp, hãy liên hệ với e Thọ thông qua:
-  - WhatsApp: 0342397341
-  - SĐT: 0342397341
-
-## Một số quy ước chung
-
-1. **Luôn luôn tạo PR, mặc dù có quyền được push thẳng vô main nhưng luôn luôn tạo PR**
-2. File media sẽ nằm ở thư mục `assets/images`
-3. Luôn luôn là folder, đừng gộp hết toàn bộ rules vào 1 trang, xem ví dụ chia ra ở `contents/violations`
