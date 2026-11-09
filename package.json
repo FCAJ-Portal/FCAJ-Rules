@@ -9,9 +9,9 @@
     "fmt": "oxfmt"
   },
   "dependencies": {
-    "blume": "^2.2.5"
+    "blume": "^2.2.7"
   },
   "devDependencies": {
-    "oxfmt": "^0.74.0"
+    "oxfmt": "^0.78.0"
   }
 }
