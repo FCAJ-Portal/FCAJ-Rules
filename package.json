@@ -9,6 +9,7 @@
     "fmt": "oxfmt"
   },
   "dependencies": {
+    "@vercel/speed-insights": "^2.1.0",
     "blume": "^2.2.7"
   },
   "devDependencies": {
